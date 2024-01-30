@@ -26,11 +26,10 @@ model-viewer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   cursor: pointer;
-  height: 24px;
+  height: 0px; 
   padding: 8px;
   position: relative;
   transition: opacity 0.3s;
-  width: 24px;
 }
 
 .Hotspot:not([data-visible]) {
@@ -61,9 +60,7 @@ model-viewer {
   color: rgba(0, 0, 0, 0.8);
   display: block;
   font-family: Futura, Helvetica Neue, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  left: calc(100% + 1em);
+  font-size: 11px;
   max-width: 128px;
   overflow-wrap: break-word;
   padding: 0.5em 1em;
