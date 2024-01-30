@@ -1,0 +1,60 @@
+<model-viewer src="wheelOfEmotions.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
+    <button class="Hotspot" slot="hotspot-2" data-position="-0.0037902662970007352m 0.28031014278531075m -0.19386382665763127m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">SERENITY</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="-0.004463316422327133m 0.28031014278531075m -0.1361038842656702m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">JOY</div>
+    </button><button class="Hotspot" slot="hotspot-4" data-position="-0.004487171984179963m 0.28031014278531075m -0.07709518431784165m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ECSTASY</div>
+    </button><button class="Hotspot" slot="hotspot-5" data-position="0.1347616635097515m 0.28031014278531075m -0.13722027333814693m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ACCEPTANCE</div>
+    </button><button class="Hotspot" slot="hotspot-6" data-position="0.0928442720868158m 0.28031014278531075m -0.09542972780503114m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">TRUST</div>
+    </button><button class="Hotspot" slot="hotspot-7" data-position="0.04590789463554708m 0.28031014278531075m -0.04840332911424045m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ADMIRATION</div>
+    </button><button class="Hotspot" slot="hotspot-8" data-position="0.19376887261596967m 0.28031014278531097m 0.001400109122615041m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">APPREHENSION</div>
+    </button><button class="Hotspot" slot="hotspot-9" data-position="0.1360013184392811m 0.28031014278531075m 0.0052715904365460454m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">FEAR</div>
+    </button><button class="Hotspot" slot="hotspot-10" data-position="0.07182466263329454m 0.28031014278531075m 0.0003937077553904447m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">TERROR</div>
+    </button><button class="Hotspot" slot="hotspot-11" data-position="0.1355101555258718m 0.28031014278531075m 0.1426753497421486m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">DISTRACTION</div>
+    </button><button class="Hotspot" slot="hotspot-12" data-position="0.09730052338647319m 0.28031014278531075m 0.10325233472497887m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">SURPRISE</div>
+    </button><button class="Hotspot" slot="hotspot-13" data-position="0.04481820446117054m 0.28031014278531075m 0.049135406661455966m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">AMAZEMENT</div>
+    </button><button class="Hotspot" slot="hotspot-14" data-position="-0.002132778088409927m 0.2803101427853105m 0.20371787276192085m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">PENSIVENESS</div>
+    </button><button class="Hotspot" slot="hotspot-15" data-position="-0.003192237283837954m 0.28031014278531097m 0.14512551128844972m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">SADNESS</div>
+    </button><button class="Hotspot" slot="hotspot-16" data-position="-0.00489166603291341m 0.28031014278531075m 0.07775607137275892m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">GRIEF</div>
+    </button><button class="Hotspot" slot="hotspot-17" data-position="-0.14141964596470202m 0.28031014278531075m 0.14014739948695507m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">BOREDOM</div>
+    </button><button class="Hotspot" slot="hotspot-18" data-position="-0.10384388693622255m 0.28031014278531075m 0.10249320321543633m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">DISGUST</div>
+    </button><button class="Hotspot" slot="hotspot-19" data-position="-0.05432239862551169m 0.28031014278531075m 0.05372686492028951m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">LOATHING</div>
+    </button><button class="Hotspot" slot="hotspot-20" data-position="-0.20181102649874963m 0.28031014278531075m 0.00301433699237251m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ANNOYANCE</div>
+    </button><button class="Hotspot" slot="hotspot-21" data-position="-0.1447067864910205m 0.28031014278531075m 0.0032671183443361944m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ANGER</div>
+    </button><button class="Hotspot" slot="hotspot-22" data-position="-0.07768731035390136m 0.28031014278531075m 0.0038681433495946m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">RAGE</div>
+    </button><button class="Hotspot" slot="hotspot-23" data-position="-0.1421535255131428m 0.28031014278531075m -0.13673714479833585m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">INTEREST</div>
+    </button><button class="Hotspot" slot="hotspot-24" data-position="-0.10223723422513581m 0.28031014278531075m -0.09712443502379511m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">ANTICIPATION</div>
+    </button><button class="Hotspot" slot="hotspot-26" data-position="-0.05769734040704695m 0.28031014278531075m -0.05073005735268052m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">VIGILANCE</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
