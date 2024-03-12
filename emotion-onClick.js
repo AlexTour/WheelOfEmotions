@@ -17,7 +17,7 @@ document.addEventListener('click', async (event) => {
 });
 
 function showEmotionDetails(details) {
-    const detailsContainer = document.querySelector('.emotion-details');
+    const detailsContainer = document.getElementById('emotion-details');
     detailsContainer.innerHTML = `
         <h2>${details.name}</h2>
         <p>${details.description}</p>
