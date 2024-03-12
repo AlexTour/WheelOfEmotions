@@ -22,4 +22,6 @@ function showEmotionDetails(details) {
         <h2>${details.name}</h2>
         <p>${details.description}</p>
         <p>${details.coping_strategy}</p>
+    `;
+    detailsContainer.classList.add('show');
 }
