@@ -21,6 +21,7 @@ function showEmotionDetails(details) {
     detailsContainer.innerHTML = `
         <h2>${details.name}</h2>
         <p>${details.description}</p>
+        <p>${details.coping_strategy}</p>
         <!-- Add more details as needed -->
     `;
 }
