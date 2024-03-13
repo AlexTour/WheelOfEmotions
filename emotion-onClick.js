@@ -7,18 +7,18 @@ modelViewer.querySelectorAll('button').forEach((hotspot) => {
     hotspot.addEventListener('click', () => annotationClicked(hotspot));
   });
 
-const annotationClicked = (annotation) => {
+// Declare annotationClicked as async function
+const annotationClicked = async (annotation) => {
     let dataset = annotation.dataset;
     if (annotation) {
-        console.log(annotation);
-            try {
-                const details = await fetchEmotionDetails(annotation);
-                showEmotionDetails(annotation);
-            } catch (error) {
-                console.error('Error fetching emotion details:', error);
-            }
+        console.log(annotation.innerText);
+        try {
+            const details = await fetchEmotionDetails(annotation.innerText); // Pass innerText to fetchEmotionDetails
+            showEmotionDetails(details);
+        } catch (error) {
+            console.error('Error fetching emotion details:', error);
+        }
     }
-
 }
 
 function showEmotionDetails(details) {
