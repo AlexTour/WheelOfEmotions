@@ -1,6 +1,8 @@
 import { fetchEmotionDetails } from './emotion-details.js';
 
 const modelViewer = document.getElementById('modelviewer');
+const detailsContainer = document.getElementById('emotion-details');
+
 
 // Function to close the emotion details container
 function closeEmotionDetails() {
@@ -35,7 +37,6 @@ const annotationClicked = async (annotation) => {
 }
 
 function showEmotionDetails(details) {
-    const detailsContainer = document.getElementById('emotion-details');
     detailsContainer.innerHTML = `
         <h2>${details.name}</h2>
         <p>${details.description}</p>
