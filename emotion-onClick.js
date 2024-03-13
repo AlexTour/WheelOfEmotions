@@ -1,6 +1,5 @@
 import { fetchEmotionDetails } from './emotion-details.js';
 
-const closeButton = document.getElementById('close-button');
 const modelViewer = document.getElementById('modelviewer');
 
 // Function to close the emotion details container
@@ -8,8 +7,13 @@ function closeEmotionDetails() {
     detailsContainer.classList.remove('show');
 }
 
-// Event listener for the close button click
-closeButton.addEventListener('click', closeEmotionDetails);
+// Event listener to close the emotion details container when clicking outside
+document.body.addEventListener('click', (event) => {
+    // Check if the clicked element is outside of the emotion details container
+    if (!detailsContainer.contains(event.target)) {
+        closeEmotionDetails();
+    }
+});
 
 // Listen for clicks on hotspots
 modelViewer.querySelectorAll('button').forEach((hotspot) => {
