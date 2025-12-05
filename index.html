@@ -1,93 +1,188 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>3D Plutchik's Wheel of Emotions</title>
-    <meta name="description" content="A 3D version of Plutchik's Wheel of Emotions">
+    <title>Interactive 3D Plutchik's Wheel of Emotions</title>
+    <meta name="description" content="An interactive 3D version of Plutchik's Wheel of Emotions to help understand and explore emotional combinations.">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://alextour.github.io/WheelOfEmotions/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="3D Plutchik's Wheel of Emotions">
-    <meta property="og:description" content="A 3D version of Plutchik's Wheel of Emotions">
+    <meta property="og:title" content="Interactive 3D Plutchik's Wheel of Emotions">
+    <meta property="og:description" content="An interactive 3D version of Plutchik's Wheel of Emotions to help understand and explore emotional combinations.">
     <meta property="og:image" content="https://opengraph.b-cdn.net/production/documents/8f7bad98-1f12-4311-83ad-44f29105ec66.png?token=loRLN2B35u7p543nvgmlJwVciqaKmJwxXbsailuve9A&height=630&width=1200&expires=33242632292">
-
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="alextour.github.io">
     <meta property="twitter:url" content="https://alextour.github.io/WheelOfEmotions/">
-    <meta name="twitter:title" content="3D Plutchik's Wheel of Emotions">
-    <meta name="twitter:description" content="A 3D version of Plutchik's Wheel of Emotions">
+    <meta name="twitter:title" content="Interactive 3D Plutchik's Wheel of Emotions">
+    <meta name="twitter:description" content="An interactive 3D version of Plutchik's Wheel of Emotions to help understand and explore emotional combinations.">
     <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/documents/8f7bad98-1f12-4311-83ad-44f29105ec66.png?token=loRLN2B35u7p543nvgmlJwVciqaKmJwxXbsailuve9A&height=630&width=1200&expires=33242632292">
     <link type="text/css" href="./styles.css" rel="stylesheet"/>
   </head>
   <body>
-    <!-- <model-viewer> HTML element -->
-    <model-viewer src="wheelOfEmotions.glb" id="modelviewer" ar ar-modes="scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
-      <button class="Hotspot" slot="hotspot-2" data-position="-0.0037902662970007352m 0.28031014278531075m -0.19386382665763127m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Serenity</div>
-      </button><button class="Hotspot" slot="hotspot-3" data-position="-0.004463316422327133m 0.28031014278531075m -0.1361038842656702m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Joy</div>
-      </button><button class="Hotspot" slot="hotspot-4" data-position="-0.004487171984179963m 0.28031014278531075m -0.07709518431784165m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Ecstasy</div>
-      </button><button class="Hotspot" slot="hotspot-5" data-position="0.1347616635097515m 0.28031014278531075m -0.13722027333814693m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Acceptance</div>
-      </button><button class="Hotspot" slot="hotspot-6" data-position="0.0928442720868158m 0.28031014278531075m -0.09542972780503114m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Trust</div>
-      </button><button class="Hotspot" slot="hotspot-7" data-position="0.04590789463554708m 0.28031014278531075m -0.04840332911424045m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Admiration</div>
-      </button><button class="Hotspot" slot="hotspot-8" data-position="0.19376887261596967m 0.28031014278531097m 0.001400109122615041m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Apprehension</div>
-      </button><button class="Hotspot" slot="hotspot-9" data-position="0.1360013184392811m 0.28031014278531075m 0.0052715904365460454m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Fear</div>
-      </button><button class="Hotspot" slot="hotspot-10" data-position="0.07182466263329454m 0.28031014278531075m 0.0003937077553904447m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Terror</div>
-      </button><button class="Hotspot" slot="hotspot-11" data-position="0.1355101555258718m 0.28031014278531075m 0.1426753497421486m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Distraction</div>
-      </button><button class="Hotspot" slot="hotspot-12" data-position="0.09730052338647319m 0.28031014278531075m 0.10325233472497887m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Surprise</div>
-      </button><button class="Hotspot" slot="hotspot-13" data-position="0.04481820446117054m 0.28031014278531075m 0.049135406661455966m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Amazement</div>
-      </button><button class="Hotspot" slot="hotspot-14" data-position="-0.002132778088409927m 0.2803101427853105m 0.20371787276192085m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Pensiveness</div>
-      </button><button class="Hotspot" slot="hotspot-15" data-position="-0.003192237283837954m 0.28031014278531097m 0.14512551128844972m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Sadness</div>
-      </button><button class="Hotspot" slot="hotspot-16" data-position="-0.00489166603291341m 0.28031014278531075m 0.07775607137275892m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Grief</div>
-      </button><button class="Hotspot" slot="hotspot-17" data-position="-0.14141964596470202m 0.28031014278531075m 0.14014739948695507m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Boredom</div>
-      </button><button class="Hotspot" slot="hotspot-18" data-position="-0.10384388693622255m 0.28031014278531075m 0.10249320321543633m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Disgust</div>
-      </button><button class="Hotspot" slot="hotspot-19" data-position="-0.05432239862551169m 0.28031014278531075m 0.05372686492028951m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Loathing</div>
-      </button><button class="Hotspot" slot="hotspot-20" data-position="-0.20181102649874963m 0.28031014278531075m 0.00301433699237251m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Annoyance</div>
-      </button><button class="Hotspot" slot="hotspot-21" data-position="-0.1447067864910205m 0.28031014278531075m 0.0032671183443361944m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Anger</div>
-      </button><button class="Hotspot" slot="hotspot-22" data-position="-0.07768731035390136m 0.28031014278531075m 0.0038681433495946m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Rage</div>
-      </button><button class="Hotspot" slot="hotspot-23" data-position="-0.1421535255131428m 0.28031014278531075m -0.13673714479833585m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Interest</div>
-      </button><button class="Hotspot" slot="hotspot-24" data-position="-0.10223723422513581m 0.28031014278531075m -0.09712443502379511m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Anticipation</div>
-      </button><button class="Hotspot" slot="hotspot-26" data-position="-0.05769734040704695m 0.28031014278531075m -0.05073005735268052m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Vigilance</div>
-      </button>
-      <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
-      </div>
-      <button slot="ar-button" id="ar-button">
-          View in your space
-      </button>
-      <div id="ar-prompt">
-          <img src="ar_hand_prompt.png">
-      </div>
-    </model-viewer>
-    <div id="emotion-details" class="emotion-details"></div>
-    <script src="script.js"></script>
-    <script type="module" src="emotion-onClick.js"></script>
+    <div class="container">
+      <header>
+        <h1>Plutchik's Wheel of Emotions</h1>
+        <p>Explore how basic emotions combine to form complex ones. Click on an emotion to learn more, including its combinations. This tool helps with emotional awareness, journaling, and understanding feelings in daily life or therapy.</p>
+      </header>
+      <!-- <model-viewer> HTML element -->
+      <model-viewer src="wheelOfEmotions.glb" id="modelviewer" ar ar-modes="scene-viewer quick-look" camera-controls auto-rotate tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" environment-image="neutral">
+        <button class="Hotspot" slot="hotspot-2" data-position="-0.0037902662970007352m 0.28031014278531075m -0.19386382665763127m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Serenity</div>
+        </button><button class="Hotspot" slot="hotspot-3" data-position="-0.004463316422327133m 0.28031014278531075m -0.1361038842656702m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Joy</div>
+        </button><button class="Hotspot" slot="hotspot-4" data-position="-0.004487171984179963m 0.28031014278531075m -0.07709518431784165m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Ecstasy</div>
+        </button><button class="Hotspot" slot="hotspot-5" data-position="0.1347616635097515m 0.28031014278531075m -0.13722027333814693m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Acceptance</div>
+        </button><button class="Hotspot" slot="hotspot-6" data-position="0.0928442720868158m 0.28031014278531075m -0.09542972780503114m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Trust</div>
+        </button><button class="Hotspot" slot="hotspot-7" data-position="0.04590789463554708m 0.28031014278531075m -0.04840332911424045m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Admiration</div>
+        </button><button class="Hotspot" slot="hotspot-8" data-position="0.19376887261596967m 0.28031014278531097m 0.001400109122615041m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Apprehension</div>
+        </button><button class="Hotspot" slot="hotspot-9" data-position="0.1360013184392811m 0.28031014278531075m 0.0052715904365460454m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Fear</div>
+        </button><button class="Hotspot" slot="hotspot-10" data-position="0.07182466263329454m 0.28031014278531075m 0.0003937077553904447m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Terror</div>
+        </button><button class="Hotspot" slot="hotspot-11" data-position="0.1355101555258718m 0.28031014278531075m 0.1426753497421486m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Distraction</div>
+        </button><button class="Hotspot" slot="hotspot-12" data-position="0.09730052338647319m 0.28031014278531075m 0.10325233472497887m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Surprise</div>
+        </button><button class="Hotspot" slot="hotspot-13" data-position="0.04481820446117054m 0.28031014278531075m 0.049135406661455966m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Amazement</div>
+        </button><button class="Hotspot" slot="hotspot-14" data-position="-0.002132778088409927m 0.2803101427853105m 0.20371787276192085m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Pensiveness</div>
+        </button><button class="Hotspot" slot="hotspot-15" data-position="-0.003192237283837954m 0.28031014278531097m 0.14512551128844972m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Sadness</div>
+        </button><button class="Hotspot" slot="hotspot-16" data-position="-0.00489166603291341m 0.28031014278531075m 0.07775607137275892m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Grief</div>
+        </button><button class="Hotspot" slot="hotspot-17" data-position="-0.14141964596470202m 0.28031014278531075m 0.14014739948695507m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Boredom</div>
+        </button><button class="Hotspot" slot="hotspot-18" data-position="-0.10384388693622255m 0.28031014278531075m 0.10249320321543633m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Disgust</div>
+        </button><button class="Hotspot" slot="hotspot-19" data-position="-0.05432239862551169m 0.28031014278531075m 0.05372686492028951m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Loathing</div>
+        </button><button class="Hotspot" slot="hotspot-20" data-position="-0.20181102649874963m 0.28031014278531075m 0.00301433699237251m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Annoyance</div>
+        </button><button class="Hotspot" slot="hotspot-21" data-position="-0.1447067864910205m 0.28031014278531075m 0.0032671183443361944m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Anger</div>
+        </button><button class="Hotspot" slot="hotspot-22" data-position="-0.07768731035390136m 0.28031014278531075m 0.0038681433495946m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Rage</div>
+        </button><button class="Hotspot" slot="hotspot-23" data-position="-0.1421535255131428m 0.28031014278531075m -0.13673714479833585m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Interest</div>
+        </button><button class="Hotspot" slot="hotspot-24" data-position="-0.10223723422513581m 0.28031014278531075m -0.09712443502379511m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Anticipation</div>
+        </button><button class="Hotspot" slot="hotspot-26" data-position="-0.05769734040704695m 0.28031014278531075m -0.05073005735268052m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Vigilance</div>
+        </button>
+        <!-- Added hotspots for primary dyads -->
+        <button class="Hotspot dyad" slot="hotspot-love" data-position="0.050110808773019086m 0.28031014278531075m -0.13127643248219706m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Love</div>
+        </button>
+        <button class="Hotspot dyad" slot="hotspot-submission" data-position="0.13073543117109077m 0.28031014278531075m -0.05150574645268156m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Submission</div>
+        </button>
+        <button class="Hotspot dyad" slot="hotspot-awe" data-position="0.12740594618738932m 0.28031014278531075m 0.05926482731970951m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Awe</div>
+        </button>
+        <button class="Hotspot dyad" slot="hotspot-disapproval" data-position="0.04978630082136615m 0.28031014278531086m 0.13139984448873357m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Disapproval</div>
+        </button>
+        <button class="Hotspot dyad" slot="hotspot-remorse" data-position="-0.055753617376608174m 0.28031014278531086m 0.1289811188917266m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Remorse</div>
+        </button>
+        <button class="Hotspot dyad" slot="hotspot-contempt" data-position="-0.12929706313679307m 0.28031014278531075m 0.05501694598338841m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Contempt</div>
+        </button>
+        <button class="Hotspot dyad" slot="hotspot-aggressiveness" data-position="-0.13134826272144492m 0.28031014278531075m -0.049922227125772496m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Aggressiveness</div>
+        </button>
+        <button class="Hotspot dyad" slot="hotspot-optimism" data-position="-0.05845778195849223m 0.28031014278531075m -0.1277782556213392m" data-normal="0m 1m 0m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Optimism</div>
+        </button>
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+        <div id="ar-prompt">
+            <img src="ar_hand_prompt.png">
+        </div>
+      </model-viewer>
+      <div id="emotion-details" class="emotion-details"></div>
+    </div>
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <script type="module">
+      const emotionData = {
+        // Intensities mapped to primaries
+        'Serenity': { desc: 'Serenity is a mild form of joy, bringing peace and tranquility.', primary: 'Joy' },
+        'Joy': { desc: 'Joy is a positive emotion of happiness and contentment.', combinations: {'Trust': 'Love', 'Anticipation': 'Optimism', 'Fear': 'Guilt', 'Surprise': 'Delight', 'Sadness': 'Bittersweetness', 'Anger': 'Pride'} },
+        'Ecstasy': { desc: 'Ecstasy is an intense form of joy, overwhelming happiness.', primary: 'Joy' },
+        'Acceptance': { desc: 'Acceptance is a mild form of trust, openness to others.', primary: 'Trust' },
+        'Trust': { desc: 'Trust is confidence in others, forming bonds.', combinations: {'Joy': 'Love', 'Fear': 'Submission', 'Surprise': 'Curiosity', 'Sadness': 'Sentimentality', 'Anticipation': 'Hope', 'Disgust': 'Ambivalence'} },
+        'Admiration': { desc: 'Admiration is an intense form of trust, deep respect.', primary: 'Trust' },
+        'Apprehension': { desc: 'Apprehension is a mild form of fear, cautious worry.', primary: 'Fear' },
+        'Fear': { desc: 'Fear is a response to perceived threat, for protection.', combinations: {'Trust': 'Submission', 'Joy': 'Guilt', 'Surprise': 'Awe', 'Sadness': 'Despair', 'Disgust': 'Shame', 'Anger': 'Frozenness', 'Anticipation': 'Anxiety'} },
+        'Terror': { desc: 'Terror is an intense form of fear, extreme dread.', primary: 'Fear' },
+        'Distraction': { desc: 'Distraction is a mild form of surprise, mild startle.', primary: 'Surprise' },
+        'Surprise': { desc: 'Surprise is reaction to unexpected events.', combinations: {'Fear': 'Awe', 'Joy': 'Delight', 'Trust': 'Curiosity', 'Sadness': 'Disapproval', 'Disgust': 'Unbelief', 'Anger': 'Outrage', 'Anticipation': 'Confusion'} },
+        'Amazement': { desc: 'Amazement is an intense form of surprise, wonder.', primary: 'Surprise' },
+        'Pensiveness': { desc: 'Pensiveness is a mild form of sadness, reflective melancholy.', primary: 'Sadness' },
+        'Sadness': { desc: 'Sadness is response to loss or disappointment.', combinations: {'Surprise': 'Disapproval', 'Joy': 'Bittersweetness', 'Trust': 'Sentimentality', 'Fear': 'Despair', 'Disgust': 'Remorse', 'Anger': 'Envy', 'Anticipation': 'Pessimism'} },
+        'Grief': { desc: 'Grief is an intense form of sadness, deep sorrow.', primary: 'Sadness' },
+        'Boredom': { desc: 'Boredom is a mild form of disgust, lack of interest.', primary: 'Disgust' },
+        'Disgust': { desc: 'Disgust is aversion to something offensive.', combinations: {'Sadness': 'Remorse', 'Trust': 'Ambivalence', 'Fear': 'Shame', 'Surprise': 'Unbelief', 'Anger': 'Contempt', 'Anticipation': 'Cynicism'} },
+        'Loathing': { desc: 'Loathing is an intense form of disgust, strong hatred.', primary: 'Disgust' },
+        'Annoyance': { desc: 'Annoyance is a mild form of anger, irritation.', primary: 'Anger' },
+        'Anger': { desc: 'Anger is response to perceived injustice or threat.', combinations: {'Disgust': 'Contempt', 'Fear': 'Frozenness', 'Joy': 'Pride', 'Surprise': 'Outrage', 'Sadness': 'Envy', 'Anticipation': 'Vengeance'} },
+        'Rage': { desc: 'Rage is an intense form of anger, furious outrage.', primary: 'Anger' },
+        'Interest': { desc: 'Interest is a mild form of anticipation, curiosity.', primary: 'Anticipation' },
+        'Anticipation': { desc: 'Anticipation is looking forward to future events.', combinations: {'Anger': 'Aggressiveness', 'Joy': 'Optimism', 'Trust': 'Hope', 'Fear': 'Anxiety', 'Surprise': 'Confusion', 'Sadness': 'Pessimism', 'Disgust': 'Cynicism'} },
+        'Vigilance': { desc: 'Vigilance is an intense form of anticipation, alertness.', primary: 'Anticipation' },
+        // Dyads
+        'Love': { desc: 'Love combines joy and trust, leading to affection and bonding.' },
+        'Submission': { desc: 'Submission combines trust and fear, resulting in compliance.' },
+        'Awe': { desc: 'Awe combines fear and surprise, inspiring wonder and respect.' },
+        'Disapproval': { desc: 'Disapproval combines surprise and sadness, expressing disagreement.' },
+        'Remorse': { desc: 'Remorse combines sadness and disgust, feeling regret.' },
+        'Contempt': { desc: 'Contempt combines disgust and anger, showing disdain.' },
+        'Aggressiveness': { desc: 'Aggressiveness combines anger and anticipation, driving action.' },
+        'Optimism': { desc: 'Optimism combines anticipation and joy, hopeful expectation.' }
+      };
+
+      const hotspots = document.querySelectorAll('.Hotspot');
+      const details = document.getElementById('emotion-details');
+
+      hotspots.forEach(hotspot => {
+        hotspot.addEventListener('click', () => {
+          const emotion = hotspot.querySelector('.HotspotAnnotation').textContent;
+          const data = emotionData[emotion] || { desc: 'No description available.' };
+          let html = `<h2>${emotion}</h2><p>${data.desc}</p>`;
+          if (data.combinations) {
+            html += '<h3>Combinations:</h3><ul>';
+            for (const [other, comb] of Object.entries(data.combinations)) {
+              html += `<li>${emotion} + ${other} = ${comb}</li>`;
+            }
+            html += '</ul>';
+          }
+          if (data.primary) {
+            html += `<p>This is a variant of <strong>${data.primary}</strong>. See ${data.primary} for combinations.</p>`;
+          }
+          html += '<button class="close">Close</button>';
+          details.innerHTML = html;
+          details.classList.add('show');
+        });
+      });
+
+      details.addEventListener('click', (e) => {
+        if (e.target.classList.contains('close')) {
+          details.classList.remove('show');
+        }
+      });
+    </script>
   </body>
 </html>
