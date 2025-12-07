@@ -398,3 +398,21 @@ model-viewer > #ar-prompt > img {
     width: 400px;
   }
 }
+
+  footer.credits {
+    width: 100%;
+    text-align: center;
+    padding: 0px 12px;
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    justify-content: center;
+  }
+
+  footer.credits p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: smaller;
+  }
