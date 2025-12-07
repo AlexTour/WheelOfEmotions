@@ -90,31 +90,13 @@ header h1 {
   transform: translateY(-2px);
 }
 
-.tooltip {
-  position: relative;
-  font-size: 1.2em;
-  cursor: help;
-  color: #94a3b8;
-}
-
+.tooltip { position: relative; font-size: 1.6rem; color: #94a3b8; cursor: help; }
 .tooltip .tooltiptext {
-  visibility: hidden;
-  width: 200px;
-  background-color: #1e1e2e;
-  color: #e2e8f0;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -100px;
-  opacity: 0;
-  transition: opacity 0.3s;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
-  font-size: 0.9rem;
-  line-height: 1.5;
+  visibility: hidden; width: 280px; background: #1e1e2e; color: #e2e8f0;
+  text-align: center; border-radius: 8px; padding: 12px;
+  position: absolute; z-index: 100; top: 150%; right: -20px;
+  opacity: 0; transition: opacity 0.4s; box-shadow: 0 8px 30px rgba(0,0,0,0.7);
+  font-size: 0.9rem; line-height: 1.5;
 }
 
 .tooltip:hover .tooltiptext {
@@ -125,7 +107,7 @@ header h1 {
 model-viewer {
   flex: 1;
   width: 100%;
-  background-color: #0a0a0d;
+  background-color: #f6faff;
 }
 
 .Hotspot {
