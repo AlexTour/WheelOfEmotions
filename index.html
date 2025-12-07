@@ -232,9 +232,9 @@
         hotspot.addEventListener('click', () => {
           const emotion = hotspot.querySelector('.HotspotAnnotation').textContent;
           const data = emotionData[emotion] || { desc: 'No description available.' };
-          let html = `<h2>${emotion}</h1><p>${data.desc}</p>`;
+          let html = `<h1>${emotion}</h1><p>${data.desc}</p>`;
           if (data.combinations) {
-            html += '<h3>Combinations:</h3><ul>';
+            html += '<h2>Combinations:</h2><ul>';
             for (const [other, comb] of Object.entries(data.combinations)) {
               html += `<li>${emotion} + ${other} = ${comb}</li>`;
             }
