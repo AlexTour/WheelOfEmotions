@@ -111,23 +111,16 @@ model-viewer {
 }
 
 .Hotspot {
-  background: rgba(255,255,255,0.12);
-  border: 2px solid rgba(255,255,255,0.2);
-  border-radius: 50%;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  background: #fff;
+  border-radius: 32px;
+  border: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
   cursor: pointer;
-  height: 24px;
-  width: 24px;
-  padding: 0;
+  height: 0px;
+  padding: 0px;
   position: relative;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  backdrop-filter: blur(8px);
-}
-
-.Hotspot:hover {
-  background: rgba(255,255,255,0.25);
-  transform: scale(1.3);
-  box-shadow: 0 0 20px rgba(100,150,255,0.4);
+  transition: opacity 0.3s;
 }
 
 .Hotspot:not([data-visible]) {
@@ -139,29 +132,43 @@ model-viewer {
   width: 0px;
 }
 
+.Hotspot:focus {
+  border: 2px solid rgb(0, 128, 200);
+  height: 8px;
+  outline: none;
+  width: 8px;
+}
+
+.Hotspot > * {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
 .HotspotAnnotation {
-  background: rgba(20,20,35,0.95);
   border-radius: 4px;
-  color: #f8f9fa;
+  color: rgba(0, 0, 0, 0.8);
   display: block;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 14px;
-  max-width: 140px;
+  font-family: Futura, Helvetica Neue, sans-serif;
+  font-size: 14px; /* Increased font size */
+  max-width: 128px;
   overflow-wrap: break-word;
-  padding: 8px 12px;
-  position: absolute;
+  padding: 0.5em 1em;
+  position: relative;
   top: 50%;
-  left: 100%;
-  margin-left: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-  white-space: normal;
-  border: 1px solid rgba(255,255,255,0.1);
-  backdrop-filter: blur(12px);
+  width: max-content;
 }
 
 .dyad .HotspotAnnotation {
   font-style: italic;
-  color: #c084fc;
+  font-size: 12px;
+  color: #551a8b; /* Purple for dyads */
+}
+
+.Hotspot:not([data-visible]) > * {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(calc(-50% + 4px));
+  transition: transform 0.3s, opacity 0.3s;
 }
 
 .progress-bar {
