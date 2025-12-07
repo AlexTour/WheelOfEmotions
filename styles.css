@@ -147,7 +147,7 @@ model-viewer {
   color: rgba(0, 0, 0, 0.8);
   display: block;
   font-family: Futura, Helvetica Neue, sans-serif;
-  font-size: 14px; /* Increased font size */
+  font-size: 12px; /* Increased font size */
   max-width: 128px;
   overflow-wrap: break-word;
   padding: 0.5em 1em;
